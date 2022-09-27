@@ -1,0 +1,177 @@
+@charset "UTF-8";
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header .logo__img {
+  width: 280px;
+  height: 240px;
+  margin: 0 10% -20px 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+header .banniere-devis {
+  height: 250px;
+  width: 120%;
+  margin-left: -30px;
+  background: url("Images/Img-2.webp") no-repeat center;
+  background-size: cover;
+  background-position: center right;
+}
+header .banniere-devis .devis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 55% 0px 25%;
+  background-color: rgb(24, 49, 83);
+  border: 1px solid transparent;
+  border-radius: 40px;
+  width: 170px;
+  padding: 8px;
+}
+header .banniere-devis .devis .form-link {
+  color: #dadada;
+  text-decoration: none;
+  font-size: 18px;
+}
+header .banniere-devis .devis .form-link:hover {
+  transition: 0.3s;
+  font-size: 19px;
+}
+header .banniere-devis .devis:hover {
+  background-color: rgb(20, 110, 190);
+  transition: 0.3s;
+}
+
+/*main*/
+#middle__page .middle__methodes {
+  margin-bottom: 80px;
+}
+#middle__page .middle__methodes .methodes__title {
+  color: rgb(24, 49, 83);
+}
+#middle__page .middle__methodes .methodes__title hr {
+  width: 70px;
+  margin-left: 0;
+  height: 3px;
+  border: none;
+  background-color: #ffd43b;
+}
+#middle__page .middle__methodes .methodes__description {
+  text-align: left;
+  font-size: 17px;
+  color: rgb(20, 110, 190);
+}
+#middle__page .middle__methodes .methodes__description ul {
+  list-style-type: none;
+  flex-direction: column;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  color: rgb(24, 49, 83);
+}
+#middle__page .middle__methodes .methodes__description ul .description__class {
+  justify-content: space-between;
+  margin: 7px;
+  text-align: center;
+}
+#middle__page .middle__methodes .methodes__description ul .fa-solid {
+  background-color: #ffd43b;
+  padding: 5px 5px 5px 5px;
+  border-radius: 50px;
+  text-align: center;
+}
+#middle__page .middle__methodes .methodes__description ul .fa-building {
+  width: 17px;
+}
+#middle__page .middle__methodes .methodes__bloc {
+  width: 310px;
+  height: 250px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 12px rgb(24, 49, 83);
+}
+#middle__page .middle__methodes .methodes__bloc .bloc__title {
+  color: #051e34;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 5px;
+}
+#middle__page .middle__methodes .methodes__bloc .bloc__title:hover {
+  color: #dadada;
+  transition: 0.3s linear;
+  font-size: 27px;
+  border: #ffd43b 2px solid;
+  border-radius: 20px;
+}
+#middle__page .middle__methodes .methodes__bloc:hover {
+  transition: 0.4s;
+  background-color: rgb(20, 110, 190);
+}
+#middle__page .middle__methodes .type1 {
+  background: url("Images/héritage.webp") no-repeat center;
+  background-size: cover;
+  background-position: center;
+}
+#middle__page .middle__methodes .type2 {
+  background: url("Images/divorce.webp") no-repeat center;
+  background-size: cover;
+}
+#middle__page .middle__methodes .type3 {
+  background: url("Images/donation.webp") no-repeat center;
+  background-size: cover;
+  background-position: center right;
+}
+#middle__page .middle__methodes .type4 {
+  background: url("Images/Img-5.webp") no-repeat center;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background-color: #0d1a2b;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 0;
+  float: right;
+  align-items: center;
+  color: #dadada;
+}
+footer .footlog {
+  width: 50%;
+  border-radius: 50%;
+  padding: 0;
+}
+footer .footer__link {
+  list-style-type: none;
+  opacity: 1;
+  padding: 0;
+  width: 400px;
+  margin-left: -90px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+footer .footer__link li {
+  margin-bottom: 10px;
+}
+footer .footer__link li:hover {
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 15px;
+}/*# sourceMappingURL=Styles.css.map */
