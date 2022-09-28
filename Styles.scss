@@ -26,28 +26,27 @@ header{
     }
     .banniere-devis{
         height:250px;
-        width: 120%;
-        margin-left:-30px;
         background:url("Images/Img-2.webp") no-repeat center;
         background-size: cover;
-        background-position: center right;
+        background-position: center;
         .devis{
+            float: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 120px 55% 0px 25%;
+            margin: 100px;
             background-color:$color-primary;
             border: 1px solid transparent;
             border-radius: 40px;
-            width: 170px;
+            width: 120px;
             padding: 8px;
             .form-link{
                 color:$color-text-light;
                 text-decoration: none;
                 font-size:18px;
                 &:hover{
+                    font-size: 20px;
                     transition: 0.3s;
-                    font-size: 19px;
                 }
             }
             &:hover{
@@ -57,8 +56,6 @@ header{
         }
     }
     
-    
-    
 }
     
 
@@ -66,12 +63,13 @@ header{
 #middle__page{
     .middle__methodes{
         margin-bottom:80px;
-        
+         margin-left: 10px;
         .methodes__title{
             color:$color-primary;
+           
             hr{
                 width:70px;
-                margin-left: 0;
+                margin-left:0;
                 height: 3px;
                 border: none;
                 background-color: #ffd43b;
@@ -109,6 +107,17 @@ header{
                 
             }
         }
+        .contexte__title{
+            color:$color-primary;
+            hr{
+                width:70px;
+                margin-left:0;
+                height: 3px;
+                border: none;
+                background-color: #ffd43b;
+            }
+        }
+
         .methodes__bloc{
             width:310px;
             height: 250px;
@@ -120,7 +129,7 @@ header{
             justify-content: center;
             margin-left: 5%;
             margin-right: 5%;
-            border-radius: 20px;
+            border-radius:0px 40px 0px 40px ;
             text-align: center;
             box-shadow: 2px 2px 12px $color-primary;
             .bloc__title{
@@ -128,17 +137,17 @@ header{
                 font-weight: bolder;
                 font-size: 25px;
                 padding: 5px;
-                &:hover{
-                    color:$color-text-light;
-                    transition: 0.3s linear;
-                    font-size: 27px;
-                    border:#ffd43b 2px solid;
-                    border-radius: 20px;
-                }
             }
             &:hover{
                 transition: 0.4s;
                 background-color: $color-secondary;
+                & > .bloc__title{
+                        color:$color-text-light;
+                        transition: 0.3s linear;
+                        font-size: 27px;
+                        border:#ffd43b 2px solid;
+                        border-radius: 20px;
+                }
             }
         }
         .type1{
