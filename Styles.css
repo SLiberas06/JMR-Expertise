@@ -2,6 +2,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  margin-left: 10px;
+}
+
 /*header*/
 header {
   display: flex;
@@ -51,7 +55,9 @@ header .banniere-devis .devis:hover {
 /*main*/
 #middle__page .middle__methodes {
   margin-bottom: 80px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #middle__page .middle__methodes .methodes__title {
   color: rgb(24, 49, 83);
@@ -109,8 +115,7 @@ header .banniere-devis .devis:hover {
   margin-bottom: 15px;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 12px;
   border-radius: 0px 40px 0px 40px;
   text-align: center;
   box-shadow: 2px 2px 12px rgb(24, 49, 83);
@@ -150,6 +155,49 @@ header .banniere-devis .devis:hover {
   background: url("Images/Img-5.webp") no-repeat center;
   background-size: cover;
   background-position: center;
+}
+
+#Formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20%;
+  background-color: #ffd43b;
+  color: rgb(24, 49, 83);
+}
+#Formulaire hr {
+  width: 70px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  height: 3px;
+  border: none;
+  background-color: rgb(20, 110, 190);
+}
+#Formulaire .form__question {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(24, 49, 83);
+  width: 100%;
+}
+#Formulaire .form__question input {
+  border-radius: 13px;
+  border: 0;
+  height: 26px;
+  margin-top: 5px;
+}
+#Formulaire .form__submit {
+  display: flex;
+  justify-content: center;
+}
+#Formulaire .form__submit input {
+  font-size: 22px;
+  border-radius: 40px;
+  border: 0;
+  background-color: rgb(20, 110, 190);
+  color: #dadada;
+  padding: 18px 28px;
+  cursor: pointer;
+  margin-top: 40px;
 }
 
 footer {

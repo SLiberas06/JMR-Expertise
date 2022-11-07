@@ -10,6 +10,9 @@ $dark-color-secondary: darken($color-secondary,30%);
 {
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    margin-left: 10px;
+}
 /*header*/
 header{
     display:flex;
@@ -63,7 +66,9 @@ header{
 #middle__page{
     .middle__methodes{
         margin-bottom:80px;
-         margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .methodes__title{
             color:$color-primary;
            
@@ -127,8 +132,8 @@ header{
             margin-bottom:15px;
             align-items: center;
             justify-content: center;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 12px;
+            // margin-right: 5%;
             border-radius:0px 40px 0px 40px ;
             text-align: center;
             box-shadow: 2px 2px 12px $color-primary;
@@ -172,6 +177,49 @@ header{
        
     } 
  }
+ #Formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20%;
+    background-color: $color-tertiary;
+    color: $color-primary;
+    hr{
+        width:70px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        height: 3px;
+        border: none;
+        background-color: $color-secondary;
+    }
+    .form__question{
+        font-size: 18px;
+        font-weight: bold;
+        color: $color-primary;
+        width: 100%;
+        input{
+            border-radius: 13px;
+            border: 0;
+            height: 26px;
+            margin-top: 5px;
+        }
+    }
+    .form__submit{
+        display: flex;
+        justify-content: center;
+        input{
+            font-size: 22px;
+            border-radius: 40px;
+            border: 0;
+            background-color: $color-secondary;
+            color: $color-text-light;
+            padding: 18px 28px;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+  
+    }
+}
  footer{
     background-color: $dark-color-primary;
     display: flex;
