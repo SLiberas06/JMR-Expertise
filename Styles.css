@@ -12,6 +12,10 @@ header {
   flex-direction: column;
   width: 100%;
 }
+header .logo {
+  display: flex;
+  justify-content: center;
+}
 header .logo__img {
   width: 280px;
   height: 240px;
@@ -25,34 +29,44 @@ header .banniere-devis {
   background: url("Images/Img-2.webp") no-repeat center;
   background-size: cover;
   background-position: center;
-}
-header .banniere-devis .devis {
-  float: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 100px;
+}
+header .banniere-devis .devis {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: rgb(24, 49, 83);
   border: 1px solid transparent;
   border-radius: 40px;
-  width: 120px;
-  padding: 8px;
+  padding: 18px 28px;
 }
 header .banniere-devis .devis .form-link {
   color: #dadada;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
+  cursor: pointer;
 }
 header .banniere-devis .devis .form-link:hover {
-  font-size: 20px;
+  font-size: 26px;
   transition: 0.3s;
 }
 header .banniere-devis .devis:hover {
   background-color: rgb(20, 110, 190);
   transition: 0.3s;
 }
+header .banniere-devis .devis:active {
+  transition: 0.5s;
+}
 
 /*main*/
+#middle__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #middle__page .middle__methodes {
   margin-bottom: 80px;
   display: flex;
@@ -107,7 +121,7 @@ header .banniere-devis .devis:hover {
   background-color: #ffd43b;
 }
 #middle__page .middle__methodes .methodes__bloc {
-  width: 310px;
+  width: 350px;
   height: 250px;
   background-color: grey;
   display: flex;
@@ -161,14 +175,17 @@ header .banniere-devis .devis:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20%;
+  padding: 10% 0 20% 0;
   background-color: #ffd43b;
   color: rgb(24, 49, 83);
+}
+#Formulaire h1 {
+  margin: 0 0 10% 0;
 }
 #Formulaire hr {
   width: 70px;
   margin-top: -10px;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   height: 3px;
   border: none;
   background-color: rgb(20, 110, 190);
@@ -183,7 +200,10 @@ header .banniere-devis .devis:hover {
   border-radius: 13px;
   border: 0;
   height: 26px;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+#Formulaire .form__question input:focus {
+  outline: none;
 }
 #Formulaire .form__submit {
   display: flex;
@@ -199,12 +219,18 @@ header .banniere-devis .devis:hover {
   cursor: pointer;
   margin-top: 40px;
 }
+#Formulaire .form__submit input:hover {
+  font-size: 26px;
+  background-color: rgb(24, 49, 83);
+  transition: 0.3s;
+}
 
 footer {
   background-color: #0d1a2b;
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 200px;
   margin-left: 0;
   float: right;
   align-items: center;
@@ -214,21 +240,17 @@ footer .footlog {
   width: 50%;
   border-radius: 50%;
   padding: 0;
+  margin-left: 10px;
 }
 footer .footer__link {
   list-style-type: none;
   opacity: 1;
   padding: 0;
   width: 400px;
-  margin-left: -90px;
-  margin-right: 20px;
-  font-size: 14px;
+  margin-left: -100px;
+  margin-right: 10px;
+  font-size: 16px;
 }
 footer .footer__link li {
   margin-bottom: 10px;
-}
-footer .footer__link li:hover {
-  font-weight: bold;
-  transition: 0.3s;
-  font-size: 15px;
 }/*# sourceMappingURL=Styles.css.map */
