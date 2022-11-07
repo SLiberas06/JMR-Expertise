@@ -6,6 +6,75 @@ body {
   margin-left: 10px;
 }
 
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(24, 49, 83);
+  padding: 90px 0px 0px;
+  border-bottom: 1px solid #0d1a2b;
+  transform: translateX(-150%);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+nav.active {
+  transform: translate(0);
+}
+nav a {
+  color: #dadada;
+  font-size: 18px;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  width: 70%;
+}
+
+.burger {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.burger .line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(20, 110, 190);
+}
+.burger .l1 {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.burger.active .l1 {
+  transform: translateY(0px) rotate(135deg);
+}
+.burger .l3 {
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+.burger.active .l3 {
+  transform: translateY(0px) rotate(-135deg);
+  transition: 0.3s;
+}
+.burger.active .l2 {
+  opacity: 0;
+  transition: 0.3s;
+}
+
 /*header*/
 header {
   display: flex;
@@ -130,6 +199,7 @@ header .banniere-devis .devis:active {
   align-items: center;
   justify-content: center;
   margin-left: 12px;
+  margin-bottom: 40px;
   border-radius: 0px 40px 0px 40px;
   text-align: center;
   box-shadow: 2px 2px 12px rgb(24, 49, 83);
@@ -139,17 +209,6 @@ header .banniere-devis .devis:active {
   font-weight: bolder;
   font-size: 25px;
   padding: 5px;
-}
-#middle__page .middle__methodes .methodes__bloc:hover {
-  transition: 0.4s;
-  background-color: rgb(20, 110, 190);
-}
-#middle__page .middle__methodes .methodes__bloc:hover > .bloc__title {
-  color: #dadada;
-  transition: 0.3s linear;
-  font-size: 27px;
-  border: #ffd43b 2px solid;
-  border-radius: 20px;
 }
 #middle__page .middle__methodes .type1 {
   background: url("Images/heritage.webp") no-repeat center;
@@ -175,7 +234,8 @@ header .banniere-devis .devis:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10% 0 20% 0;
+  margin-top: 0;
+  padding: 15% 0 20% 0;
   background-color: #ffd43b;
   color: rgb(24, 49, 83);
 }
