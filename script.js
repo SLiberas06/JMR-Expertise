@@ -1,6 +1,6 @@
 const burger = document.querySelector('.burger');
 
-const navigation = document.querySelector('nav');
+const navigation = document.querySelector('.menu');
 
 const lien = document.querySelector('a');
 

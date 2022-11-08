@@ -1,0 +1,8 @@
+$color-primary: rgba(24,49,83,1);
+$color-secondary:rgba(20,110,190,1) ;
+$color-tertiary:#ffd43b;
+$color-text-light:#dadada;
+$light-color-primary: lighten($color-primary,10%);
+$dark-color-primary: darken($color-primary,10%);
+$light-color-secondary: lighten($color-secondary,20%);
+$dark-color-secondary: darken($color-secondary,30%);

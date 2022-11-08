@@ -1,0 +1,140 @@
+/*main*/
+#middle__page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .p_article {
+        margin-left: 0px;
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: $color-primary;
+        background-color: #f4f4f4;
+    }
+    .middle__methodes{
+        margin-bottom:80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .methodes__title{
+            color:$color-primary;
+            hr{
+                width:70px;
+                margin-left:0;
+                height: 3px;
+                border: none;
+                background-color: #ffd43b;
+            }
+        }
+        .methodes__description{
+            text-align: left;
+            font-size: 17px;
+            color:$color-secondary;
+            ul{
+                list-style-type: none;
+                flex-direction:column;
+                display: flex;
+                padding: 0;
+                align-items: center;
+                color: $color-primary;
+              
+                .description__class{
+                    justify-content: space-between;
+                    margin:7px;
+                    text-align: center;}
+                .fa-solid{
+                        background-color: $color-tertiary;
+                        padding:5px 5px 5px 5px;
+                        border-radius: 50px;
+                        text-align: center;
+                        
+                }
+                .fa-building{
+                        width: 17px;
+                }
+                li{
+                    font-size: 24px;
+                    text-align: justify;
+                    width: 100%;
+                }
+
+            }
+        }
+        .contexte__title{
+            color:$color-primary;
+            hr{
+                width:70px;
+                margin-left:0;
+                height: 3px;
+                border: none;
+                background-color: #ffd43b;
+            }
+        }
+
+        .methodes__bloc{
+            width:350px;
+            height: 250px;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            margin-bottom:15px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 12px;
+            margin-bottom: 40px;
+            border-radius:0px 40px 0px 40px ;
+            text-align: center;
+            box-shadow: 2px 2px 12px $color-primary;
+            .bloc__title{
+                color:$dark-color-secondary;
+                font-weight: bolder;
+                font-size: 25px;
+                padding: 5px;
+            }
+            // &:hover{
+            //     transition: 0.4s;
+            //     background-color: $color-secondary;
+            //     & > .bloc__title{
+            //             color:$color-text-light;
+            //             transition: 0.3s linear;
+            //             font-size: 27px;
+            //             border:#ffd43b 2px solid;
+            //             border-radius: 20px;
+            //     }
+            // }
+        }
+        .type0{
+            background:url("../Images/environnement.webp") no-repeat center;
+            background-size: cover;
+            background-position: center;
+            border-radius: 13px;
+            margin: 0;
+            padding: 30px;
+            .bloc__description{
+                font-size: 25px;
+                
+                color: $dark-color-primary ;
+            }
+        }
+        .type1{
+            background:url("../Images/heritage.webp") no-repeat center ;
+            background-size: cover;
+            background-position: center;
+        }
+        .type2{
+            background:url("../Images/divorce.webp") no-repeat center;
+            background-size: cover;
+        }
+        .type3{
+            background:url("../Images/donation.webp") no-repeat center;
+            background-size: cover;
+            background-position: center right;
+        }
+        .type4{
+            background:url("../Images/Img-5.webp") no-repeat center;
+            background-size: cover;
+            background-position: center;
+        }
+       
+    } 
+ }
