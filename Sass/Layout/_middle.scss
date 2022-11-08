@@ -32,7 +32,7 @@
             color:$color-primary;
             background-color: #cdcdcd;
             border-radius: 13px;
-            padding:10px;
+            padding:20px;
             ul{
                 list-style-type: none;
                 flex-direction:column;
@@ -116,6 +116,7 @@
             .bloc__description{
                 font-size: 25px;
                 color: $dark-color-primary ;
+                padding: 20px;
             }
         }
         .type1{

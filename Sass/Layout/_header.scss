@@ -53,16 +53,23 @@ header{
         .title_article{
             display: flex;
             flex-direction: column;
-            text-align: left;
-            margin-left: 5%;
+            // justify-content: center;
+            align-items: center;
              color:$color-primary;
              width: 90%;
              hr{
                  width:70px;
-                 margin-left:0;
+                 margin-left:0%;
                  height: 3px;
                  border: none;
                  background-color: #ffd43b;
+                 justify-content: left;
+                 @media(min-width: 768px){
+                    margin-left: 10%;
+                 }
+                 @media(min-width: 992px){
+                    margin-left: 27%;
+                 }
              }
          }
          
