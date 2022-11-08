@@ -28,8 +28,11 @@
         }
         .methodes__description{
             text-align: left;
-            font-size: 17px;
-            color:$color-secondary;
+            font-size: 22px;
+            color:$color-primary;
+            background-color: #eaeaea;
+            border-radius: 13px;
+            padding:10px;
             ul{
                 list-style-type: none;
                 flex-direction:column;
@@ -108,11 +111,9 @@
             background-size: cover;
             background-position: center;
             border-radius: 13px;
-            margin: 0;
-            padding: 30px;
+            padding:10px;
             .bloc__description{
                 font-size: 25px;
-                
                 color: $dark-color-primary ;
             }
         }
