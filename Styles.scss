@@ -10,8 +10,12 @@ $dark-color-secondary: darken($color-secondary,30%);
 {
     font-family: Arial, Helvetica, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin-left: 10px;
+    background-color: #f4f4f4;
 }
 nav{
     position: fixed;
@@ -25,7 +29,7 @@ nav{
     padding: 90px 0px 0px;
     border-bottom: 1px solid $dark-color-primary;
     transform: translateX(-150%);
-   
+    z-index: 2;
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
     &.active {
         transform:translate(0);
@@ -36,7 +40,7 @@ nav{
         display: block;
         margin: 10px 0;
         text-decoration: none;
-        width: 70%;
+        width: 90%;
         
     }
 }
@@ -134,8 +138,22 @@ header{
                 transition: 0.5s;
             }
         }
+        .title_article{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 5%;
+             color:$color-primary;
+             width: 90%;
+             hr{
+                 width:70px;
+                 margin-left:0;
+                 height: 3px;
+                 border: none;
+                 background-color: #ffd43b;
+             }
+         }
     }
-    
 }
 
 /*main*/
@@ -143,6 +161,14 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .p_article {
+        margin-left: 0px;
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: $color-primary;
+        background-color: #f4f4f4;
+    }
     .middle__methodes{
         margin-bottom:80px;
         display: flex;
@@ -169,20 +195,27 @@ header{
                 padding: 0;
                 align-items: center;
                 color: $color-primary;
+              
                 .description__class{
                     justify-content: space-between;
                     margin:7px;
                     text-align: center;}
-                    .fa-solid{
+                .fa-solid{
                         background-color: $color-tertiary;
                         padding:5px 5px 5px 5px;
                         border-radius: 50px;
                         text-align: center;
-                    }
-                    .fa-building{
+                        
+                }
+                .fa-building{
                         width: 17px;
-                       
-                    }
+                }
+                li{
+                    font-size: 24px;
+                    text-align: justify;
+                    width: 100%;
+                }
+
             }
         }
         .contexte__title{
@@ -305,6 +338,8 @@ header{
     }
     }
 }
+
+
  footer{
     background-color: $dark-color-primary;
     display: flex;
