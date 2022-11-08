@@ -30,7 +30,7 @@
             text-align: left;
             font-size: 22px;
             color:$color-primary;
-            background-color: #eaeaea;
+            background-color: #cdcdcd;
             border-radius: 13px;
             padding:10px;
             ul{
@@ -44,7 +44,8 @@
                 .description__class{
                     justify-content: space-between;
                     margin:7px;
-                    text-align: center;}
+                    text-align: center;
+                }
                 .fa-solid{
                         background-color: $color-tertiary;
                         padding:5px 5px 5px 5px;
@@ -57,12 +58,12 @@
                 }
                 li{
                     font-size: 24px;
-                    text-align: justify;
                     width: 100%;
                 }
 
             }
         }
+        
         .contexte__title{
             color:$color-primary;
             hr{
@@ -111,7 +112,7 @@
             background-size: cover;
             background-position: center;
             border-radius: 13px;
-            padding:10px;
+            
             .bloc__description{
                 font-size: 25px;
                 color: $dark-color-primary ;

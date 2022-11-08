@@ -103,7 +103,7 @@ header .banniere-devis .title_article hr {
   text-align: left;
   font-size: 22px;
   color: rgb(24, 49, 83);
-  background-color: #eaeaea;
+  background-color: #cdcdcd;
   border-radius: 13px;
   padding: 10px;
 }
@@ -131,7 +131,6 @@ header .banniere-devis .title_article hr {
 }
 #middle__page .middle__methodes .methodes__description ul li {
   font-size: 24px;
-  text-align: justify;
   width: 100%;
 }
 #middle__page .middle__methodes .contexte__title {
@@ -170,7 +169,6 @@ header .banniere-devis .title_article hr {
   background-size: cover;
   background-position: center;
   border-radius: 13px;
-  padding: 10px;
 }
 #middle__page .middle__methodes .type0 .bloc__description {
   font-size: 25px;
@@ -228,6 +226,7 @@ header .banniere-devis .title_article hr {
   border: 0;
   height: 26px;
   margin-top: 10px;
+  width: 100%;
 }
 #Formulaire .form__question input:focus {
   outline: none;
