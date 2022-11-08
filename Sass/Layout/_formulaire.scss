@@ -33,15 +33,27 @@
         font-weight: bold;
         color: $color-primary;
         width: 100%;
+        margin-left: 10px;
         input{
             border-radius: 13px;
             border: 0;
             height: 26px;
             margin-top: 10px;
-            width: 100%;
+            margin-left: 5px;
+            width: 90%;
             &:focus{
                 outline: none;
             }
+            &:active{
+                width: 90%;
+            }
+        }
+        .error__msg{
+            color: blue
+            font-size: 16px;
+            width:100%;
+            text-align: left;
+            margin-left: 5px;
         }
     }
     .form__submit{
