@@ -1,6 +1,19 @@
-{
-  "dependencies": {
+{  "name": "JMR Expertise",
+    "version":"1.0.0",
+    "description": "JMR Expertise Website",
+    "main": "index.js",
+    "scripts":{
+      "sass": "sass ./sass/main.scss:./Users/jmrom/Desktop/Sabrina/JMR_Expertise_082022/JMR-Expertise/Sass/Styles.css -w --style compressed",
+      "prefix": "postcss ./Users/jmrom/Desktop/Sabrina/JMR_Expertise_082022/JMR-Expertise/Sass/Style.css/prefixed/"
+    },
+    "dependencies": {
     "@emailjs/browser": "^3.9.1",
-    "emailjs-com": "^3.2.0"
-  }
+    "autoprefixer": "^10.4.13",
+    "dotenv": "^16.0.3",
+    "emailjs-com": "^3.2.0",
+    "author": "",
+    "license": "ISC",
+    "browserslist": "last 5 versions"
+    }
+
 }
