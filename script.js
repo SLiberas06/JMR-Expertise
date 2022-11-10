@@ -1,3 +1,31 @@
+
+function sendMail(){
+  var params = {
+    nom : document.getElementById('lastName').value,
+    prenom: document.getElementById('firstName').value,
+    ville: document.getElementById('city').value,
+    type: document.getElementById('houseType').value,
+    tel: document.getElementById('phone').value,
+    email: document.getElementById('email').value,
+    };
+
+  const templateId = 'template_3k5rifq';
+
+  const serviceId = 'service_k6ot063';
+  emailjs.send(serviceId, templateId, params)
+  .then(res => {
+    document.getElementById('lastName').value = "";
+    document.getElementById('firstName').value = "";
+    document.getElementById('city').value = "";
+    document.getElementById('houseType').value = "";
+    document.getElementById('phone').value = "";
+    document.getElementById('email').value = "";
+    console.log(res);
+    alert('Votre message a bien été envoyé !')
+  })
+  .catch(error => console.log(error));
+};
+
 const burger = document.querySelector('.burger');
 
 const navigation = document.querySelector('.menu');
@@ -145,3 +173,5 @@ burger.addEventListener('click', ()=>{
 
 
   });
+
+  

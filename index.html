@@ -100,7 +100,7 @@
                             <p id="emailErrorMsg" class="error__msg"><!-- message d'erreur --></p>
                         </div>
                         <div class="form__submit">
-                            <input type="submit" value="Envoyer" id="submit">
+                            <input type="submit" value="Envoyer" id="submit" onclick="sendMail()">
                         </div>
                     </form>
                 </section>
@@ -116,5 +116,13 @@
                     </ul>
                
             </footer>
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("YHBMMkekQ7jIe3G72");
+       })();
+    </script>
         </body>
     </html>
