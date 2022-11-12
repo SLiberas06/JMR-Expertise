@@ -1,4 +1,5 @@
 
+//Renvois formulaire client par mail
 function sendMail(){
   var params = {
     nom : document.getElementById('lastName').value,
