@@ -3,8 +3,9 @@
     "description": "JMR Expertise Website",
     "main": "index.js",
     "scripts":{
-      "sass": "sass ./sass/main.scss:./Users/jmrom/Desktop/Sabrina/JMR_Expertise_082022/JMR-Expertise/Sass/Styles.css -w --style compressed",
-      "prefix": "postcss ./Users/jmrom/Desktop/Sabrina/JMR_Expertise_082022/JMR-Expertise/Sass/Style.css/prefixed/"
+      "sass": "sass --watch ./Sass/Styles.scss:./Sass/Styles.css",
+      "sassProd": "sass ./Sass/Styles.scss:./Sass/Styles.css --style compressed",
+      "prefix": "postcss ./Sass/Styles.css --use autoprefixer -d ./Sass/"
     },
     "dependencies": {
     "@emailjs/browser": "^3.9.1",
