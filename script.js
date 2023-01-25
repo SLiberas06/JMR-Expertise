@@ -1,5 +1,7 @@
+
 //Renvois formulaire client par mail
 function sendMail() {
+  emailjs.init("YHBMMkekQ7jIe3G72");
   var params = {
     nom: document.getElementById("lastName").value,
     prenom: document.getElementById("firstName").value,
@@ -22,8 +24,6 @@ function sendMail() {
       document.getElementById("houseType").value = "";
       document.getElementById("phone").value = "";
       document.getElementById("email").value = "";
-      console.log(res);
-      alert("Votre message a bien été envoyé !");
     })
     .catch((error) => console.log(error));
 }
@@ -168,7 +168,7 @@ btnSubmit.addEventListener("click", (event) => {
     cityControl() &&
     phoneControl() &&
     emailControl()
-  ) {
+  ) {alert('Votre formulaire a bien été envoyé, vous aurez une réponse sous 24h')
   } else {
     return false;
   }

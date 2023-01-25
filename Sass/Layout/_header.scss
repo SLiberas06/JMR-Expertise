@@ -24,6 +24,8 @@ header{
         justify-content: center;
         align-items: center;
         border-radius: 13px;
+        margin-bottom: 30px;
+        
         .devis{
             display: flex;
             flex-direction: column;
@@ -72,6 +74,5 @@ header{
                  }
              }
          }
-         
-    }
+        }         
 }

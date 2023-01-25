@@ -26,6 +26,7 @@ header .banniere-devis {
   justify-content: center;
   align-items: center;
   border-radius: 13px;
+  margin-bottom: 30px;
 }
 header .banniere-devis .devis {
   display: flex;
@@ -83,21 +84,35 @@ header .banniere-devis .title_article hr {
 #middle__page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 #middle__page .p_article {
-  margin-left: 0px;
   margin-top: 0;
   font-size: 24px;
   font-weight: 500;
   color: rgb(24, 49, 83);
   background-color: #f4f4f4;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
 }
 #middle__page .middle__methodes {
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#middle__page .middle__methodes .signature {
+  width: 300px;
+  height: 300px;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  #middle__page .middle__methodes .signature {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 0;
+  }
 }
 #middle__page .middle__methodes .methodes__title {
   color: rgb(24, 49, 83);
@@ -154,19 +169,18 @@ header .banniere-devis .title_article hr {
   background-color: #ffd43b;
 }
 #middle__page .middle__methodes .methodes__bloc {
-  width: 350px;
+  width: auto;
   height: 250px;
   background-color: grey;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
-  align-items: center;
   justify-content: center;
-  margin-left: 12px;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 40px;
-  border-radius: 0px 40px 0px 40px;
+  border-radius: 13px;
   text-align: center;
-  box-shadow: 2px 2px 12px rgb(24, 49, 83);
+  box-shadow: 2px 2px 20px rgb(24, 49, 83);
 }
 #middle__page .middle__methodes .methodes__bloc .bloc__title {
   color: #051e34;
@@ -203,6 +217,15 @@ header .banniere-devis .title_article hr {
   background: url("../Images/Img-5.webp") no-repeat center;
   background-size: cover;
   background-position: center;
+}
+#middle__page .bloc__description {
+  font-size: 24px;
+  font-weight: 500;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  color: rgb(24, 49, 83);
 }
 
 #Formulaire {
@@ -296,7 +319,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  bottom: 0;
   height: 200px;
+  margin-bottom: 0;
   margin-left: 0;
   float: right;
   align-items: center;
@@ -345,34 +370,44 @@ footer .footer__link li {
 html {
   scroll-behavior: smooth;
 }
+@media (min-width: 768px) {
+  html {
+    margin: 0 10% 0 10%;
+  }
+}
 
 body {
   margin-left: 10px;
   background-color: #f4f4f4;
-  width: 100%;
+  width: auto;
 }
 
 .menu {
   position: fixed;
-  width: 100vw;
-  height: 60vh;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgb(24, 49, 83);
-  padding: 90px 0px 0px;
   border-bottom: 1px solid #0d1a2b;
   transform: translateX(-150%);
   z-index: 2;
   transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+@media (min-width: 768px) {
+  .menu {
+    width: 80%;
+  }
 }
 .menu.active {
   transform: translate(0);
 }
 .menu a {
   color: #dadada;
-  font-size: 18px;
+  font-size: 24px;
   display: block;
   margin: 10px 0;
   text-decoration: none;
@@ -383,7 +418,7 @@ body {
   position: fixed;
   z-index: 10;
   top: 30px;
-  right: 30px;
+  right: 50px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -395,11 +430,16 @@ body {
   align-items: center;
   background-color: transparent;
 }
+@media (min-width: 768px) {
+  .burger {
+    right: 10%;
+  }
+}
 .burger .line {
   position: absolute;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 0.1em;
   background-color: rgb(20, 110, 190);
 }
 .burger .l1 {
@@ -422,6 +462,9 @@ body {
   transition: 0.3s;
 }
 
+.back-arrow {
+  margin: 30px 0px 0px 50px;
+}
 .back-arrow a {
   text-decoration: none;
   color: rgb(20, 110, 190);
@@ -741,4 +784,42 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.about-banner {
+  height: 250px;
+  background: url("../../Images/expert.webp") no-repeat center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  margin-bottom: 30px;
+}
+.about-banner .title_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(24, 49, 83);
+  width: 90%;
+}
+.about-banner .title_article hr {
+  width: 70px;
+  margin-left: 0%;
+  height: 3px;
+  border: none;
+  background-color: #ffd43b;
+  justify-content: left;
+}
+@media (min-width: 768px) {
+  .about-banner .title_article hr {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .about-banner .title_article hr {
+    margin-left: 30%;
+  }
 }/*# sourceMappingURL=Styles.css.map */

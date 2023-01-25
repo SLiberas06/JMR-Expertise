@@ -1,0 +1,8 @@
+{
+    "prettier.resolveGlobalModules": false,
+    "prettier.singleAttributePerLine": true,
+    "prettier.semi": false,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.embeddedLanguageFormatting": "off",
+    "prettier.arrowParens": "avoid"
+}

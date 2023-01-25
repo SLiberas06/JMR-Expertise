@@ -1,0 +1,37 @@
+.about-banner {
+    height: 250px;
+    background: url("../../Images/expert.webp") no-repeat center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    margin-bottom: 30px;
+    .title_article {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        color: $color-primary;
+        width: 90%;
+        hr {
+            width: 70px;
+            margin-left: 0%;
+            height: 3px;
+            border: none;
+            background-color: #ffd43b;
+            justify-content: left;
+
+            @media(min-width: 768px) {
+                margin-left: 20%;
+            }
+
+            @media(min-width: 992px) {
+                margin-left: 30%;
+            }
+        }
+    }
+
+}

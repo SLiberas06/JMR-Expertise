@@ -4,11 +4,13 @@
 }
 html{
     scroll-behavior: smooth;
-    
+    @media(min-width:768px){
+        margin: 0 10% 0 10%;
+    }    
 }
 body{
     margin-left: 10px;
     background-color: #f4f4f4;
-    width: 100%;
+    width: auto;
     
 }
