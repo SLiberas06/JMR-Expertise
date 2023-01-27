@@ -87,7 +87,7 @@ header .banniere-devis .title_article hr {
   align-items: center;
 }
 #middle__page .p_article {
-  margin-top: 0;
+  margin-top: 3vh;
   font-size: 24px;
   font-weight: 500;
   color: rgb(24, 49, 83);
