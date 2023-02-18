@@ -16,9 +16,31 @@
    </url>
    <url>
 
-      <loc>http://jmr-expertise.fr/qu_est_ce_que_l_expertise.html</loc>
+      <loc>https://jmr-expertise.fr/qu_est_ce_que_l_expertise.html</loc>
 
       <lastmod>2022-11-15</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+   <url>
+
+      <loc>https://jmr-expertise.fr/a_propos.html</loc>
+
+      <lastmod>2023-02-18</lastmod>
+
+      <changefreq>yearly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+   <url>
+
+      <loc>https://jmr-expertise.fr/l_expertise_quel_cas.html</loc>
+
+      <lastmod>2023-02-18</lastmod>
 
       <changefreq>yearly</changefreq>
 
